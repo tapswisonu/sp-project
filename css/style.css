@@ -172,7 +172,7 @@ body {
     }
 
     .contact-info h3 {
-      color: #e5007d;
+      /* color: #e5007d; */
       font-weight: 600;
     }
 
@@ -184,7 +184,7 @@ body {
     }
 
     .contact-form button {
-      background-color: #e5007d;
+      /* background-color: #e5007d; */
       border: none;
     }
 
@@ -228,7 +228,7 @@ footer { font-size:14px; }
     letter-spacing: 1px;
   }
 
-  .footer-heading::after {
+  /* .footer-heading::after {
     content: "";
     position: absolute;
     right: -20px;
@@ -236,7 +236,7 @@ footer { font-size:14px; }
     border-top: 38px solid transparent;
     border-left: 20px solid #dc3545;
     border-bottom: 0 solid transparent;
-  }
+  } */
 
   .footer a {
     text-decoration: none;
@@ -263,7 +263,7 @@ footer { font-size:14px; }
 @media (max-width: 768px) {
   .hero-section {
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .hero-img {
