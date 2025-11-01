@@ -1,4 +1,37 @@
+<!-- FONT AWESOME LINK (add in head if not already included) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 <style>
+  
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.feature-card {
+  transition: all 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.feature-card:hover .icon-circle {
+  background-color: #dc3545;
+  transform: scale(1.1);
+}
+.text-muted {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
     .product-card img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -13,24 +46,42 @@
   background-color: #fff9e6;
 }
 
+ 
+.feature-card {
+  transition: all 0.3s ease-in-out;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+</style>
+
 </style>
 
 <!-- PRODUCTS SECTION -->
 <section  id="products" class="products-section py-5 bg-light text-center position-relative overflow-hidden">
   <div class="container">
-    <h2 class="fw-bold text-uppercase mb-4 animate__animated animate__fadeInDown">
+    <!-- <h1 class="fw-bold text-uppercase mb-4 animate__animated animate__fadeInDown">
       Our <span class="text-danger">Products</span>
-    </h2>
+    </h2> -->
+        <div class="text-center my-5">
+  <h1 class="section-title d-inline-block position-relative fw-bold mb-5 animate__animated animate__fadeInDown">
+ Our Products
+  </h1>
+</div>
     <p class="lead text-muted mb-5 animate__animated animate__fadeInUp">
       We specialize in manufacturing high-quality PP/HDPE woven fabric rolls, bags, and other customized packaging materials.
       Explore our product range below.
     </p>
+ 
+
 
     <div class="row g-4">
       <!-- Product 1 -->
       <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp">
         <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden product-card">
-          <img src="assets/product-roll.jpg" class="card-img-top" alt="PP/HDPE Woven Fabric Roll">
+          <img src="/assets/product (3).jpg" class="card-img-top" alt="PP/HDPE Woven Fabric Roll">
           <div class="card-body">
             <h5 class="card-title fw-bold">PP/HDPE Woven Fabric Rolls</h5>
             <p class="card-text text-muted">
@@ -44,9 +95,10 @@
       <!-- Product 2 -->
       <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-1s">
         <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden product-card">
-          <img src="assets/product-bags.jpg" class="card-img-top" alt="Woven Sacks / Bags">
+          <img src="/assets/product (1).jpg" class="card-img-top" alt="Woven Sacks / Bags">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Woven Sacks / Bags</h5>
+            <h5 class="card-title fw-bold">High-Density Polyethylene (HDPE) Fabric and Bags
+</h5>
             <p class="card-text text-muted">
               High-strength woven sacks ideal for storing and transporting grains, fertilizers, and other goods.
             </p>
@@ -58,9 +110,10 @@
       <!-- Product 3 -->
       <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-2s">
         <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden product-card">
-          <img src="assets/product-liner-bag.jpg" class="card-img-top" alt="Liner Bags">
+          <img src="/assets/product (2).jpg" class="card-img-top" alt="Liner Bags">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Liner Bags</h5>
+            <h5 class="card-title fw-bold">Biaxially-Oriented Polypropylene (BOPP) Bags
+</h5>
             <p class="card-text text-muted">
               Moisture-resistant inner liner bags that provide superior protection for your products.
             </p>
@@ -72,7 +125,7 @@
       <!-- Product 4 -->
       <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-3s">
         <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden product-card">
-          <img src="assets/product-laminated.jpg" class="card-img-top" alt="Laminated Fabrics">
+          <img src="/assets/product (1).jpg" class="card-img-top" alt="Laminated Fabrics">
           <div class="card-body">
             <h5 class="card-title fw-bold">Laminated Fabrics</h5>
             <p class="card-text text-muted">
@@ -86,7 +139,7 @@
       <!-- Product 5 -->
       <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-4s">
         <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden product-card">
-          <img src="assets/product-fabrics.jpg" class="card-img-top" alt="Customized Packaging">
+          <img src="/assets/product (2).jpg" class="card-img-top" alt="Customized Packaging">
           <div class="card-body">
             <h5 class="card-title fw-bold">Customized Packaging</h5>
             <p class="card-text text-muted">
@@ -100,9 +153,9 @@
       <!-- Product 6 -->
       <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-5s">
         <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden product-card">
-          <img src="assets/product-industrial.jpg" class="card-img-top" alt="Industrial Sacks">
+          <img src="/assets/product (3).jpg" class="card-img-top" alt="Industrial Sacks">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Industrial Sacks</h5>
+            <h5 class="card-title fw-bold">Box Bags</h5>
             <p class="card-text text-muted">
               Heavy-duty sacks for construction, cement, and fertilizer industries with extra durability.
             </p>
@@ -111,7 +164,122 @@
         </div>
       </div>
     </div>
+
+    <!-- MISSION, VISION & QUALITY SECTION -->
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h1 class="fw-bold text-uppercase mb-5 text-danger">Our Mission, Vision & Quality</h1>
+
+    <div class="row g-4">
+      <!-- Mission -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-5 border rounded-4 shadow-sm bg-light h-100 feature-card">
+          <div class="icon-circle mx-auto mb-3 bg-danger text-white">
+            <i class="fas fa-bullseye fa-2x"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">Mission</h4>
+          <p class="text-muted">
+            We are dedicated to delivering the highest quality of products and 
+            customer services through innovation, integrity, and commitment.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-5 border rounded-4 shadow-sm bg-light h-100 feature-card">
+          <div class="icon-circle mx-auto mb-3 bg-danger text-white">
+            <i class="fas fa-eye fa-2x"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">Vision</h4>
+          <p class="text-muted">
+            To become the most preferred and trusted packaging company 
+            known for customer-centric values and world-class quality standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Quality -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-5 border rounded-4 shadow-sm bg-light h-100 feature-card">
+          <div class="icon-circle mx-auto mb-3 bg-danger text-white">
+            <i class="fas fa-award fa-2x"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">Quality</h4>
+          <p class="text-muted">
+            Our PP/HDPE and BOPP bags are durable, lightweight, and ideal for 
+            outdoor use — designed with strict quality control, timely delivery, 
+            and exceptional customer support.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Features -->
+    <div class="row g-4 mt-5 justify-content-center">
+      <!-- Custom Printing -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-5 border rounded-4 shadow-sm bg-light h-100 feature-card">
+          <div class="icon-circle mx-auto mb-3 bg-danger text-white">
+            <i class="fas fa-print fa-2x"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">Custom Printing</h4>
+          <p class="text-muted">
+            Get fully customizable printing options for unique branding and 
+            personalized packaging solutions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Range -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-5 border rounded-4 shadow-sm bg-light h-100 feature-card">
+          <div class="icon-circle mx-auto mb-3 bg-danger text-white">
+            <i class="fas fa-boxes fa-2x"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">Product Range</h4>
+          <p class="text-muted">
+            Available in multiple sizes (25–200 cm), GSM (45–150), and finishes 
+            like Hemmed, Zigzag, Cold, and Valve types.
+          </p>
+        </div>
+      </div>
+
+      <!-- Eco Commitment -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-5 border rounded-4 shadow-sm bg-light h-100 feature-card">
+          <div class="icon-circle mx-auto mb-3 bg-danger text-white">
+            <i class="fas fa-leaf fa-2x"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">Eco Commitment</h4>
+          <p class="text-muted">
+            Our bags are <strong>DURABLE</strong>, <strong>REUSABLE</strong>, and 
+            <strong>ECO-FRIENDLY</strong> — made with sustainability at heart.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+ 
+  </div>
+
+  <!-- Product Specifications Section -->
+    <div class="product-specs mt-5 animate__animated animate__fadeInUp">
+      <h3>Product Specifications</h3>
+      <p class="text-muted mb-4">
+        Our bags are available in a range of sizes and colors, making them suitable for a variety of applications such as
+        <strong>All Purpose Cement, Whole Wheat, Flour, and Organic Products</strong>.
+      </p>
+      <ul>
+        <li><strong>Net Quantity:</strong> 25 Kg / 50 Kg</li>
+        <li><strong>GSM Range:</strong> 45 GSM to 150 GSM</li>
+        <li><strong>Top Type:</strong> Hemmed, Zigzag, Cold Cut, Valve</li>
+        <li><strong>Size Range:</strong> 25 cm to 200 cm</li>
+        <li><strong>Printing:</strong> Up to 6 colors (3-3, 1-5, or 2-4 sides)</li>
+      </ul>
+    </div>
 </section>
 
 <!-- CTA SECTION -->
@@ -119,6 +287,6 @@
   <div class="container">
     <h3 class="fw-bold mb-3">Looking for reliable packaging solutions?</h3>
     <p class="text-muted mb-4">Contact us today for customized PP/HDPE woven fabric rolls, bags, and more.</p>
-    <a href="#" data-page="contact" class="btn btn-danger px-4 rounded-pill">Get a Quote</a>
+    <a href="#" data-page="contact" class="btn btn-danger btn-lg px-4 rounded-pill">Get a Quote</a>
   </div>
 </section>
