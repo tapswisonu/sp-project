@@ -164,7 +164,7 @@ linear-gradient(
 }
 
 .hero-bg {
-  background: url('./assets/logo.png') center/cover no-repeat;
+  background: url('assets/logo.png') center/cover no-repeat;
   opacity: 0.15;
   filter: blur(3px);
 }

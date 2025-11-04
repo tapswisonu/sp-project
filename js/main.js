@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+
+//  <script> 
+  // Select all nav links
+  const navLinks = document.querySelectorAll('.custom-nav .nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // Remove 'active' class from all links
+      navLinks.forEach(l => l.classList.remove('active'));
+
+      // Add 'active' class to the clicked link
+      this.classList.add('active');
+    });
+  });
+{/* </script>  */}
+
+
   const content = document.getElementById("content");
 
   // Load the default page (home)
