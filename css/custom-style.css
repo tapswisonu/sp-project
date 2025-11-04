@@ -36,7 +36,7 @@ p {
 /* ============================
    🔘 Custom Button Styles
    ============================ */
-.custom-btn-primary {
+.custom-btn-danger {
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -45,7 +45,7 @@ p {
   transition: 0.3s;
 }
 
-.custom-btn-primary:hover {
+.custom-btn-danger:hover {
   background-color: #003680;
   color: #fff;
 }
