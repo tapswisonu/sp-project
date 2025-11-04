@@ -164,7 +164,7 @@ linear-gradient(
 }
 
 .hero-bg {
-  background: url('/assets/logo.png') center/cover no-repeat;
+  background: url('./assets/logo.png') center/cover no-repeat;
   opacity: 0.15;
   filter: blur(3px);
 }
@@ -289,7 +289,9 @@ footer { font-size:14px; }
 }
 
 /* Small interactive adjustments */
-.btn-outline-warning { color: #222; border-color:#f6e94a; }
+.btn-outline-warning {
+   /* color: #222;  */
+  border-color:#f6e94a; }
 
   .footer {
     background-color: #1f2029;
