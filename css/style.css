@@ -19,6 +19,35 @@ body {
 }
 
 /* TOP BAR */
+
+/* heading design */
+.section-title {
+  padding: 10px 30px;
+  border-left: 8px solid #dc3545;
+  border-right: 8px solid #dc3545;
+  border-bottom: 4px solid #dc3545;
+  border-radius: 0 0 20px 20px; /* bag-like curved bottom */
+  display: inline-block;
+  color: #222;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Optional shadow for a 3D "bag tag" feel */
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 14px;
+    background-color: #dc3545;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+/* heading design end */
 .top-bar {
   background: linear-gradient(90deg, var(--accent) 0%, #fff 40%);
   padding: 12px 24px;
@@ -30,6 +59,49 @@ body {
 .top-bar .makeindia { height:36px; }
 
 /* NAVBAR */
+/* NAVBAR STYLING */
+.custom-nav .nav-link {
+  position: relative;
+  color: #222;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  padding: 8px 14px;
+}
+
+/* Hover text color */
+.custom-nav .nav-link:hover {
+  color: #dc3545; /* Red shade for trading / premium feel */
+}
+
+/* Underline animation */
+.custom-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #dc3545;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+/* On hover, show underline */
+.custom-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link highlight */
+.custom-nav .nav-link.active {
+  color: #dc3545;
+}
+
+.custom-nav .nav-link.active::after {
+  width: 100%;
+}
+
 .main-nav {
   background: var(--nav-bg) !important;
 }
@@ -81,13 +153,18 @@ body {
 /* === HERO SECTION === */
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, #003366, #0066cc);
+  /* background: linear-gradient(135deg, #003366, #0066cc); */
+    background:
+    /* linear-gradient(
+175deg, #353434 0%, #b52a38 100%); */
+linear-gradient(
+357deg, #353434 0%, #b52a38 100%);
   color: #fff;
   overflow: hidden;
 }
 
 .hero-bg {
-  background: url('assets/roll1.jpg') center/cover no-repeat;
+  background: url('/assets/logo.png') center/cover no-repeat;
   opacity: 0.15;
   filter: blur(3px);
 }
