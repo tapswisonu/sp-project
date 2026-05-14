@@ -97,7 +97,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
       {/* Bottom Bar */}
       <div className="border-t border-gray-800 bg-[#16171d]">
         <div className="container mx-auto px-4 py-6">
